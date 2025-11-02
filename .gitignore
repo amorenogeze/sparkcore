@@ -1,5 +1,5 @@
 # Exclude only the Debug folder under Applications
-Applications/Debug/
+Applications/TC-STSPIN958-NF103/Debug/
 .settings/
 Applications/TC-STSPIN958-NF103/Debug/TC-STSPIN958-NF103.elf
 Applications/TC-STSPIN958-NF103/Debug/TC-STSPIN958-NF103.elf
