@@ -49,6 +49,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -60,18 +62,32 @@ void Error_Handler(void);
 #define B1_Pin GPIO_PIN_13
 #define B1_GPIO_Port GPIOC
 #define B1_EXTI_IRQn EXTI15_10_IRQn
+#define STSPIN958_V2_Pin GPIO_PIN_0
+#define STSPIN958_V2_GPIO_Port GPIOC
+#define STSPIN958_PH_Pin GPIO_PIN_1
+#define STSPIN958_PH_GPIO_Port GPIOA
 #define USART_TX_Pin GPIO_PIN_2
 #define USART_TX_GPIO_Port GPIOA
 #define USART_RX_Pin GPIO_PIN_3
 #define USART_RX_GPIO_Port GPIOA
-#define LD2_Pin GPIO_PIN_5
-#define LD2_GPIO_Port GPIOA
+#define STSPIN958_V1_Pin GPIO_PIN_5
+#define STSPIN958_V1_GPIO_Port GPIOA
+#define STSPIN958_ENABLE_Pin GPIO_PIN_10
+#define STSPIN958_ENABLE_GPIO_Port GPIOB
+#define STSPIN958_OFFSET_Pin GPIO_PIN_7
+#define STSPIN958_OFFSET_GPIO_Port GPIOC
+#define STSPIN958_REF_Pin GPIO_PIN_10
+#define STSPIN958_REF_GPIO_Port GPIOA
 #define TMS_Pin GPIO_PIN_13
 #define TMS_GPIO_Port GPIOA
 #define TCK_Pin GPIO_PIN_14
 #define TCK_GPIO_Port GPIOA
 #define SWO_Pin GPIO_PIN_3
 #define SWO_GPIO_Port GPIOB
+#define STSPIN958_PWM1_Pin GPIO_PIN_5
+#define STSPIN958_PWM1_GPIO_Port GPIOB
+#define STSPIN958_STANDBY_Pin GPIO_PIN_6
+#define STSPIN958_STANDBY_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
