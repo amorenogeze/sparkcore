@@ -9,6 +9,7 @@
 #define HBRIDGE_INC_IHBRIDGE_HPP_
 #include <cstdint>
 
+
 class IHbridge {
 public:
 	virtual ~IHbridge() = default;

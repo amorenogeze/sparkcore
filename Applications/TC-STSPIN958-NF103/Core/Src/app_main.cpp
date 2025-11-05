@@ -21,7 +21,6 @@ constexpr uint16_t TOTAL_SAMPLES = 1000;
 constexpr uint16_t SAMPLES_PER_PULSE = 10;
 
 static uint16_t adc_buffer[TOTAL_SAMPLES];
-//float voltage_buffer[TOTAL_SAMPLES];    // Output buffer
 
 static volatile bool adc_data_ready = false;
 static volatile uint16_t adc_latest_value = 0;  // This will be read in the while loop
@@ -45,6 +44,7 @@ void app_main(AppContext_t *ctx)
     bridge.Enable();
     bridge.SetFrequency(10000);
     bridge.SetDutycycleClockWise(25.0);
+
 
     while (1)
     {
