@@ -24,5 +24,4 @@ public:
 };
 
 
-
 #endif /* HBRIDGE_INC_IHBRIDGE_HPP_ */

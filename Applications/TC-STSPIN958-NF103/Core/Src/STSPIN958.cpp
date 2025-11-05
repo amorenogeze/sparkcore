@@ -17,6 +17,7 @@ void STSPIN958::Init()
 bool STSPIN958::Enable()
 {
 	HAL_GPIO_WritePin(STSPIN958_ENABLE_GPIO_Port, STSPIN958_ENABLE_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(STSPIN958_STANDBY_GPIO_Port, STSPIN958_STANDBY_Pin, GPIO_PIN_SET);
 	return true;
 }
 
@@ -28,6 +29,10 @@ bool STSPIN958::Disable()
 
 bool STSPIN958::SetFrequency(uint32_t Frequency)
 {
+    // Clamp frequency between 5 kHz and 20 kHz
+    if (Frequency < 5000)  Frequency = 5000;
+    if (Frequency > 20000) Frequency = 20000;
+
     if (Frequency <= 0.0f)
         return false;
 

@@ -14,7 +14,9 @@
 
 class STSPIN958: public IHbridge {
 public:
-	STSPIN958(){}
+	STSPIN958(TIM_HandleTypeDef* timer, uint32_t channel):
+	m_timer(timer),
+	m_channel(channel){}
 	~STSPIN958(){}
 
 	void Init();
