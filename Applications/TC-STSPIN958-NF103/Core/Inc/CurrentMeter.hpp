@@ -15,9 +15,9 @@ public:
 	CurrentMeter(TIM_HandleTypeDef* timer, uint32_t pwm_channel, uint32_t adc_trigger_channel);
 	~CurrentMeter();
 	void Init();
-	void CenterAlignSampling();
-	void InterruptHandler(uint16_t*, uint8_t);
-	void DataReadyCB(uint32_t);
+	void ADCCenterAlignSampling();
+	void SetADCData(uint16_t*, uint8_t);
+	void SetCallback(Callback);
 private:
     TIM_HandleTypeDef* m_timer;
     uint32_t m_pwm_channel;

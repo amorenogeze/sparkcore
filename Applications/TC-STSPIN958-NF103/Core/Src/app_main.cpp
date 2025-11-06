@@ -7,6 +7,7 @@
 
 #include "app_main.hpp"
 #include "STSPIN958.hpp"
+#include "CurrentMeter.hpp"
 
 #include <math.h>
 #include <stdint.h>
