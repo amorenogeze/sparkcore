@@ -1,6 +1,6 @@
-C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_poc_torquecontroller.hpp:41:2:mcc_poc_torquecontroller::mcc_poc_torquecontroller()	16	static
-C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_poc_torquecontroller.hpp:42:2:mcc_poc_torquecontroller::~mcc_poc_torquecontroller()	16	static
-C:/Users/abelm/sparkcore/Applications/Demos/mcc-poc-torquecontroller/mcc_poc_torquecontroller.cpp:17:22:void* mcc_poc_torquecontroller_Create()	16	static
-C:/Users/abelm/sparkcore/Applications/Demos/mcc-poc-torquecontroller/mcc_poc_torquecontroller.cpp:21:17:void mcc_poc_torquecontroller_Destroy(MCCHandle)	24	static
-C:/Users/abelm/sparkcore/Applications/Demos/mcc-poc-torquecontroller/mcc_poc_torquecontroller.cpp:25:17:void mcc_poc_torquecontroller_SetContext(MCCHandle, void*)	24	static
-C:/Users/abelm/sparkcore/Applications/Demos/mcc-poc-torquecontroller/mcc_poc_torquecontroller.cpp:30:17:void mcc_poc_torquecontroller_Start(MCCHandle)	24	static
+C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_capi.hpp:16:13:IMccAplication::~IMccAplication()	16	static
+C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_capi.hpp:16:13:virtual IMccAplication::~IMccAplication()	16	static
+C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_poc_torquecontroller.hpp:33:2:mcc_poc_torquecontroller::~mcc_poc_torquecontroller()	16	static
+C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_poc_torquecontroller.hpp:33:2:virtual mcc_poc_torquecontroller::~mcc_poc_torquecontroller()	16	static
+C:/Users/abelm/sparkcore/Applications/Demos/mcc-poc-torquecontroller/mcc_poc_torquecontroller.cpp:16:6:virtual void mcc_poc_torquecontroller::setContext(void*)	16	static
+C:/Users/abelm/sparkcore/Applications/Demos/mcc-poc-torquecontroller/mcc_poc_torquecontroller.cpp:21:6:virtual void mcc_poc_torquecontroller::run()	16	static

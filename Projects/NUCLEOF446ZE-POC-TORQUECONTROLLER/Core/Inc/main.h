@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "mcc_poc_torquecontroller.hpp"
+#include <mcc_capi.h>
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

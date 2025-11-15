@@ -1,6 +1,7 @@
 "./Applications/Demos/mcc-poc-torquecontroller/mcc_poc_torquecontroller.o"
 "./Applications/mcc-sparkcore/mcc_sparkcore.o"
 "./Applications/mcc-sparkcore-emc/mcc_sparkcore_emc.o"
+"./Applications/mcc_capi.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32f4xx_hal_msp.o"
 "./Core/Src/stm32f4xx_it.o"

@@ -1,0 +1,5 @@
+C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_capi.hpp:13:7:constexpr IMccAplication::IMccAplication()	16	static
+C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_poc_torquecontroller.hpp:32:2:mcc_poc_torquecontroller::mcc_poc_torquecontroller()	16	static
+C:/Users/abelm/sparkcore/Applications/mcc_capi.cpp:23:22:void* Mcc_Create(MccType)	32	static
+C:/Users/abelm/sparkcore/Applications/mcc_capi.cpp:43:17:void Mcc_Destroy(MccHandle)	24	static
+C:/Users/abelm/sparkcore/Applications/mcc_capi.cpp:54:17:void Mcc_SetContext(MccHandle, void*)	24	static

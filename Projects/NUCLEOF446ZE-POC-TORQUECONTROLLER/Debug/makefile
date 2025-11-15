@@ -18,6 +18,7 @@ RM := rm -rf
 -include Applications/mcc-sparkcore-emc/subdir.mk
 -include Applications/mcc-sparkcore/subdir.mk
 -include Applications/Demos/mcc-poc-torquecontroller/subdir.mk
+-include Applications/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)

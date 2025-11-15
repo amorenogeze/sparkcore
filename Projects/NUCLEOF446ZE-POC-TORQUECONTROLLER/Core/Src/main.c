@@ -62,6 +62,10 @@ static void MX_TIM1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+typedef struct
+{
+	TIM_HandleTypeDef *bridgeTimer;
+}MccContext;
 
 /* USER CODE END 0 */
 
@@ -98,9 +102,13 @@ int main(void)
   MX_USB_OTG_FS_PCD_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-  mcc_poc_torquecontroller_Create();
-  /* USER CODE END 2 */
+  static MccContext ctx;
+  ctx.bridgeTimer = &htim1;
 
+  MccHandle handle = Mcc_Create(MCC_POC_TORQUECONTROLLER);
+  Mcc_SetContext(handle, &ctx);
+  /* USER CODE END 2 */
+  //Mcc_Run(handle);
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)

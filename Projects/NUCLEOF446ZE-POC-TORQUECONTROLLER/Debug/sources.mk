@@ -41,6 +41,7 @@ SUBDIRS := \
 Applications/Demos/mcc-poc-torquecontroller \
 Applications/mcc-sparkcore \
 Applications/mcc-sparkcore-emc \
+Applications \
 Core/Src \
 Core/Startup \
 Drivers/STM32F4xx_HAL_Driver/Src \
