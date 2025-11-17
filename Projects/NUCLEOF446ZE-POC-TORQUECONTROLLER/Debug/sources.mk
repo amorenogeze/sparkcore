@@ -39,6 +39,11 @@ CPP_DEPS :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 Applications/Demos/mcc-poc-torquecontroller \
+Applications/TC-STSPIN958-NF103/Debug/Core/Src \
+Applications/TC-STSPIN958-NF103/Debug/Core/Startup \
+Applications/TC-STSPIN958-NF103/Debug/Drivers/STM32F1xx_HAL_Driver/Src \
+Applications/TC-STSPIN958-NF103/Debug/SparkCore-Components/TorqueController/src \
+Applications/TC-STSPIN958-NF103/Debug \
 Applications/mcc-sparkcore \
 Applications/mcc-sparkcore-emc \
 Applications \

@@ -17,6 +17,11 @@ RM := rm -rf
 -include Core/Src/subdir.mk
 -include Applications/mcc-sparkcore-emc/subdir.mk
 -include Applications/mcc-sparkcore/subdir.mk
+-include Applications/TC-STSPIN958-NF103/Debug/SparkCore-Components/TorqueController/src/subdir.mk
+-include Applications/TC-STSPIN958-NF103/Debug/Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
+-include Applications/TC-STSPIN958-NF103/Debug/Core/Startup/subdir.mk
+-include Applications/TC-STSPIN958-NF103/Debug/Core/Src/subdir.mk
+-include Applications/TC-STSPIN958-NF103/Debug/subdir.mk
 -include Applications/Demos/mcc-poc-torquecontroller/subdir.mk
 -include Applications/subdir.mk
 -include objects.mk
@@ -91,8 +96,8 @@ all: main-build
 main-build: NUCLEOF446ZE-POC-TORQUECONTROLLER.elf secondary-outputs
 
 # Tool invocations
-NUCLEOF446ZE-POC-TORQUECONTROLLER.elf NUCLEOF446ZE-POC-TORQUECONTROLLER.map: $(OBJS) $(USER_OBJS) C:\Users\abelm\sparkcore\Projects\NUCLEOF446ZE-POC-TORQUECONTROLLER\STM32F446ZETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "NUCLEOF446ZE-POC-TORQUECONTROLLER.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\abelm\sparkcore\Projects\NUCLEOF446ZE-POC-TORQUECONTROLLER\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEOF446ZE-POC-TORQUECONTROLLER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+NUCLEOF446ZE-POC-TORQUECONTROLLER.elf NUCLEOF446ZE-POC-TORQUECONTROLLER.map: $(OBJS) $(USER_OBJS) C:\Users\U7247\Documents\GitHub\sparkcore\Projects\NUCLEOF446ZE-POC-TORQUECONTROLLER\STM32F446ZETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "NUCLEOF446ZE-POC-TORQUECONTROLLER.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\U7247\Documents\GitHub\sparkcore\Projects\NUCLEOF446ZE-POC-TORQUECONTROLLER\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NUCLEOF446ZE-POC-TORQUECONTROLLER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

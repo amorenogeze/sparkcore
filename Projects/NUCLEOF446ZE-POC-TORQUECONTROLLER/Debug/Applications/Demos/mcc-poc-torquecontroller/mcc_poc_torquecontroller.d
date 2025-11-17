@@ -1,6 +1,6 @@
 Applications/Demos/mcc-poc-torquecontroller/mcc_poc_torquecontroller.o: \
- C:/Users/abelm/sparkcore/Applications/Demos/mcc-poc-torquecontroller/mcc_poc_torquecontroller.cpp \
- C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_poc_torquecontroller.hpp \
+ C:/Users/U7247/Documents/GitHub/sparkcore/Applications/Demos/mcc-poc-torquecontroller/mcc_poc_torquecontroller.cpp \
+ C:/Users/U7247/Documents/GitHub/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_poc_torquecontroller.hpp \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -32,10 +32,10 @@ Applications/Demos/mcc-poc-torquecontroller/mcc_poc_torquecontroller.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
- C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_capi.hpp \
- C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_capi.h \
- C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_poc_torquecontroller.hpp
-C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_poc_torquecontroller.hpp:
+ C:/Users/U7247/Documents/GitHub/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_capi.hpp \
+ C:/Users/U7247/Documents/GitHub/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_capi.h \
+ C:/Users/U7247/Documents/GitHub/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_poc_torquecontroller.hpp
+C:/Users/U7247/Documents/GitHub/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_poc_torquecontroller.hpp:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
@@ -67,6 +67,6 @@ C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applic
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h:
-C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_capi.hpp:
-C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_capi.h:
-C:/Users/abelm/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_poc_torquecontroller.hpp:
+C:/Users/U7247/Documents/GitHub/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_capi.hpp:
+C:/Users/U7247/Documents/GitHub/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_capi.h:
+C:/Users/U7247/Documents/GitHub/sparkcore/Projects/NUCLEOF446ZE-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_poc_torquecontroller.hpp:
