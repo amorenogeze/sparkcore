@@ -62,9 +62,16 @@ static void MX_TIM1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+typedef struct{
+	GPIO_TypeDef *port;
+	uint16_t pin;
+}MccGpioContext;
+
 typedef struct
 {
 	TIM_HandleTypeDef *bridgeTimer;
+	MccGpioContext auxOutput;
+	MccGpioContext userLed1;
 }MccContext;
 
 /* USER CODE END 0 */
@@ -104,11 +111,15 @@ int main(void)
   /* USER CODE BEGIN 2 */
   static MccContext ctx;
   ctx.bridgeTimer = &htim1;
+  ctx.auxOutput.port = MCO_GPIO_Port;
+  ctx.auxOutput.pin = MCO_Pin;
+  ctx.userLed1.port = LD1_GPIO_Port;
+  ctx.userLed1.pin = LD1_Pin;
 
   MccHandle handle = Mcc_Create(MCC_POC_TORQUECONTROLLER);
   Mcc_SetContext(handle, &ctx);
   /* USER CODE END 2 */
-  //Mcc_Run(handle);
+  Mcc_Run(handle);
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)

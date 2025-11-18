@@ -1,0 +1,6 @@
+C:/Users/U7247/Documents/GitHub/sparkcore/Projects/MUSTERA-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_capi.hpp:13:7:constexpr IMccAplication::IMccAplication()	16	static
+C:/Users/U7247/Documents/GitHub/sparkcore/Projects/MUSTERA-POC-TORQUECONTROLLER/../../Applications/Includes/mcc_poc_torquecontroller.hpp:31:2:mcc_poc_torquecontroller::mcc_poc_torquecontroller()	16	static
+C:/Users/U7247/Documents/GitHub/sparkcore/Applications/mcc_capi.cpp:22:22:void* Mcc_Create(MccType)	32	static
+C:/Users/U7247/Documents/GitHub/sparkcore/Applications/mcc_capi.cpp:41:17:void Mcc_Destroy(MccHandle)	24	static
+C:/Users/U7247/Documents/GitHub/sparkcore/Applications/mcc_capi.cpp:49:17:void Mcc_SetContext(MccHandle, void*)	24	static
+C:/Users/U7247/Documents/GitHub/sparkcore/Applications/mcc_capi.cpp:57:17:void Mcc_Run(MccHandle)	24	static

@@ -11,6 +11,18 @@
 #ifndef INCLUDES_MCC_CAPI_H_
 #define INCLUDES_MCC_CAPI_H_
 
+#if defined(STM32F4xx)
+    #include "stm32f4xx_hal.h"
+#elif defined(STM32F1xx)
+    #include "stm32f1xx_hal.h"
+#elif defined(STM32G4xx)
+    #include "stm32g4xx_hal.h"
+#elif defined(STM32L451xx)
+	#include "stm32l4xx_hal.h"
+#else
+    #error "Unsupported STM32 family"
+#endif
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -19,8 +31,6 @@ typedef void* MccHandle;  // opaque handle for C
 
 
 typedef enum {
-    //MCC_SPARKCORE,
-    //MCC_SPARKCORE_EMC,
 	MCC_POC_TORQUECONTROLLER,
 	MCC_MAX
 } MccType;

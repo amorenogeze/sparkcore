@@ -12,51 +12,53 @@
 #include "mcc_capi.hpp"
 #include "mcc_poc_torquecontroller.hpp"
 #include "mcc_sparkcore.hpp"
-#include "mcc_sparkcore_emc.hpp"
 #include <stdexcept>
 
 struct MccWrapper {
-    void* instance;
+	IMccAplication* instance;
     MccType type;
 };
 
-extern "C" MccHandle Mcc_Create(MccType type) {
-	MccWrapper* wrapper = new MccWrapper;
+extern "C" MccHandle Mcc_Create(MccType type)
+{
+    MccWrapper* wrapper = new MccWrapper;
+    wrapper->instance = nullptr;
     wrapper->type = type;
-    switch(type) {
-        //case MCC_SPARKCORE:
-            //wrapper->instance = new A();
-            break;
-        //case MCC_SPARKCORE_EMC:
-            //wrapper->instance = new B();
-            break;
+
+    switch (type) {
         case MCC_POC_TORQUECONTROLLER:
             wrapper->instance = new mcc_poc_torquecontroller();
             break;
+        //TODO: Add applications
         default:
             delete wrapper;
             return nullptr;
     }
+
     return wrapper;
 }
 
-extern "C" void Mcc_Destroy(MccHandle handle) {
-	MccWrapper* wrapper = static_cast<MccWrapper*>(handle);
-    if(!wrapper) return;
-    switch(wrapper->type) {
-        //case MCC_SPARKCORE: delete static_cast<A*>(wrapper->instance); break;
-        //case MCC_SPARKCORE_EMC: delete static_cast<B*>(wrapper->instance); break;
-        case MCC_POC_TORQUECONTROLLER: delete static_cast<mcc_poc_torquecontroller*>(wrapper->instance); break;
-    }
-    delete wrapper;
+extern "C" void Mcc_Destroy(MccHandle handle)
+{
+    MccWrapper* wrapper = static_cast<MccWrapper*>(handle);
+    if (!wrapper) return;
+    delete wrapper->instance;
+
 }
 
-extern "C" void Mcc_SetContext(MccHandle handle, void* ctx) {
-	MccWrapper* wrapper = static_cast<MccWrapper*>(handle);
-    if(!wrapper) return;
-    switch(wrapper->type) {
-        //case APP_A: static_cast<A*>(wrapper->instance)->setContext(ctx); break;
-        //case APP_B: static_cast<B*>(wrapper->instance)->setContext(ctx); break;
-    //case MCC_POC_TORQUECONTROLLER: delete static_cast<mcc_poc_torquecontroller*>(wrapper->instance)->set; break;
-    }
+extern "C" void Mcc_SetContext(MccHandle handle, void* ctx)
+{
+    MccWrapper* wrapper = static_cast<MccWrapper*>(handle);
+    if (!wrapper) return;
+    wrapper->instance->setContext(ctx);
+
+}
+
+extern "C" void Mcc_Run(MccHandle handle)
+{
+    MccWrapper* wrapper = static_cast<MccWrapper*>(handle);
+    if (!wrapper) return;
+    if (!wrapper->instance) return;
+    // Forward the call to the C++ object
+    wrapper->instance->run();
 }

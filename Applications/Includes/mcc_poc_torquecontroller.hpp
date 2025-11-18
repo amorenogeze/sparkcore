@@ -11,13 +11,12 @@
 
 #ifndef DEMOS_MCC_POC_TORQUECONTROLLER_MCC_POC_TORQUECONTROLLER_HPP_
 #define DEMOS_MCC_POC_TORQUECONTROLLER_MCC_POC_TORQUECONTROLLER_HPP_
-#include "stm32f4xx_hal.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-//#include "CurrentMeter1_AMuster.hpp"
-//#include "HBridge_AMuster.hpp"
+
 #include "mcc_capi.hpp"
 #include "mcc_poc_torquecontroller.hpp"
 
@@ -35,6 +34,8 @@ public:
 	void setContext(void* ctx);
 	void run();
 private:
+	TIM_HandleTypeDef mBridgeTimer;
+
 };
 #endif  // __cplusplus
 
