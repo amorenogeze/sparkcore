@@ -1,6 +1,6 @@
 # Ignore all Debug build folders everywhere
 **/Debug/
-
+**\Debug\
 # Ignore all object files
 *.o
 
@@ -20,3 +20,6 @@ Applications/TC-STSPIN958-NF103/Debug/TC-STSPIN958-NF103.elf
 Applications/TC-STSPIN958-NF103/Debug/TC-STSPIN958-NF103.elf
 Applications/TC-STSPIN958-NF103/Debug/TC-STSPIN958-NF103.list
 Applications/TC-STSPIN958-NF103/Debug/TC-STSPIN958-NF103.map
+*.map
+*.d
+*.o
