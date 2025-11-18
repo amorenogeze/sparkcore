@@ -9,7 +9,6 @@
  * @date        <2025-11-14>
  ***********************************************************************************/
 
-#include "mcc_capi.hpp"
 #include "mcc_poc_torquecontroller.hpp"
 #include "mcc_sparkcore.hpp"
 #include <stdexcept>
